@@ -1,44 +1,44 @@
 <header>
-  <nav
-    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
-  >
-    <div class="container">
-      <a class="navbar-brand" [routerLink]="['/']">StaticApp</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
-        aria-label="Toggle navigation"
-        [attr.aria-expanded]="isExpanded"
-        (click)="toggle()"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
-        [ngClass]="{ show: isExpanded }"
-      >
-        <ul class="navbar-nav flex-grow">
-          <li
-            class="nav-item"
-            [routerLinkActive]="['link-active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/counter']"
-              >Counter</a
-            >
-          </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
-              >Fetch data</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button mat-icon-button>
+          <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+        <h1>MD Mehdi IMAM</h1>
+        <span class="menu-spacer"></span>
+        <div>
+          <a mat-button [routerLink]="'/'"> Home </a>
+          <a mat-button [routerLink]="'/counter'"> Profile </a>
+          <a mat-button [routerLink]="'/fetch-data'"> Contact Me </a>
+
+
+        </div>
+      </mat-toolbar-row>
+
+      <mat-toolbar-row>
+        <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+   
 </header>
+<mat-sidenav-container >
+  <mat-sidenav #sidenav style="background-color:black;color:turquoise">
+    <mat-nav-list>
+      <a mat-button [routerLink]="'/'"> <img src="Images/1234.png" /> </a><br />
+      <a mat-button [routerLink]="'/'"> Home </a><br />
+      <a mat-button [routerLink]="'/counter'"> Profile </a><br />
+      <a mat-button [routerLink]="'/fetch-data'"> Contact Me </a>
+      <!--<a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>-->
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 88vh;" class="container" >
+
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+  
+
