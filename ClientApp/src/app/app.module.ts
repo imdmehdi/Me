@@ -30,8 +30,8 @@ import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatBu
     MatSliderModule, MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'skills', component: CounterComponent },
+      { path: 'contactMe', component: FetchDataComponent },
     ]),
     BrowserAnimationsModule
   ],

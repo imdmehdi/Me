@@ -9,8 +9,8 @@
         <span class="menu-spacer"></span>
         <div>
           <a mat-button [routerLink]="'/'"> Home </a>
-          <a mat-button [routerLink]="'/counter'"> Profile </a>
-          <a mat-button [routerLink]="'/fetch-data'"> Contact Me </a>
+          <a mat-button [routerLink]="'/skills'"> Profile </a>
+          <a mat-button [routerLink]="'/contactMe'"> Contact Me </a>
 
 
         </div>
@@ -25,12 +25,12 @@
    
 </header>
 <mat-sidenav-container >
-  <mat-sidenav #sidenav style="background-color:black;color:turquoise">
+  <mat-sidenav #sidenav style="background-color:black;color:antiquewhite">
     <mat-nav-list>
       <a mat-button [routerLink]="'/'"> <img src="Images/1234.png" /> </a><br />
-      <a mat-button [routerLink]="'/'"> Home </a><br />
-      <a mat-button [routerLink]="'/counter'"> Profile </a><br />
-      <a mat-button [routerLink]="'/fetch-data'"> Contact Me </a>
+      <a mat-button [routerLink]="'/'"><p><i class="fa fa-home w3-xlarge"></i> &nbsp;&nbsp; Home</p> </a><br />
+      <a mat-button [routerLink]="'/skills'"><p><i class="fa fa-book w3-xlarge"></i>&nbsp;&nbsp;Skills</p> </a><br />
+      <a mat-button [routerLink]="'/contactMe'"><p><i class="fa fa-envelope w3-xlarge"></i>&nbsp;&nbsp; Contact Me</p> </a>
       <!--<a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>-->
 
     </mat-nav-list>
