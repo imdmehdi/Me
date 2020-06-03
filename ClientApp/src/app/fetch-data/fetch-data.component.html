@@ -1,24 +1,29 @@
-<h1 id="tableLabel">Weather forecast</h1>
+<div class="w3-padding-64 w3-content w3-text-grey w3-hover-green" id="contact">
+  <h2 class="w3-text-light-grey">Contact Me</h2>
+  <hr style="width:200px" class="w3-opacity">
+  <div class="LI-profile-badge" style="float:right" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="mdmehdiimam"><a class="LI-simple-link" href='https://in.linkedin.com/in/mdmehdiimam?trk=profile-badge'></a></div>
 
-<p>This component demonstrates fetching data from the server.</p>
+  <div class="w3-section">
+    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Pune, India</p>
+    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 7019543871 </p>
+    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: imdmehdi@gmail.com</p>
 
-<p *ngIf="!forecasts"><em>Loading...</em></p>
+  </div><br>
+  <p>Lets get in touch. Send me a message</p>
+</div>
+<!--<div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="mdmehdiimam"><a class="LI-simple-link" href='https://in.linkedin.com/in/mdmehdiimam?trk=profile-badge'>Md Mehdi Imam</a></div>-->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <a href="https://facebook.com/007killyou" target="_blank"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a> |
+  <a href="https://www.instagram.com/imdmehdi/" target="_blank"><i class="fa fa-instagram w3-hover-text-purple"></i></a> |
+  <a href="https://www.instagram.com/imdmehdi/" target="_blank"><i class="fa fa-snapchat w3-hover-text-yellow"></i></a> |
+  <a href="https://www.instagram.com/imdmehdi/" target="_blank"><i class="fa fa-pinterest-p w3-hover-text-red"></i></a> |
+  <a href="https://twitter.com/MdimamMehdi" target="_blank"><i class="fa fa-twitter w3-hover-text-light-blue"></i></a> |
+  <a href="https://www.linkedin.com/in/mdmehdiimam/" target="_blank"><i class="fa fa-linkedin w3-hover-text-indigo"></i><br /></a>
+  <br />
 
-<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="forecasts">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Temp. (C)</th>
-      <th>Temp. (F)</th>
-      <th>Summary</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let forecast of forecasts">
-      <td>{{ forecast.date }}</td>
-      <td>{{ forecast.temperatureC }}</td>
-      <td>{{ forecast.temperatureF }}</td>
-      <td>{{ forecast.summary }}</td>
-    </tr>
-  </tbody>
-</table>
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+
+  <i class="fa fa-copyright w3-hover-text-red"> 2020 Md Mehdi Imam.</i>
+  <!-- End footer -->
+</footer>
