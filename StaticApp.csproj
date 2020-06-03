@@ -29,8 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\Images\1234.png" />
-    <None Include="wwwroot\Images\HomeBack.jpg" />
+    <Resource Include="wwwroot\Images\1234.png" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
