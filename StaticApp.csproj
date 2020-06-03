@@ -24,12 +24,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\Images\1234.png" />
     <Content Remove="wwwroot\Images\HomeBack.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="wwwroot\Images\1234.png" />
+    <Content Update="wwwroot\Images\1234.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
