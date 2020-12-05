@@ -1,12 +1,11 @@
 <header>
   
-    <mat-toolbar color="primary">
+    <mat-toolbar style="background-color:black;" color="primary">
       <mat-toolbar-row>
         <button mat-icon-button>
           <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
         </button>
-        <h1>MD Mehdi IMAM</h1>
-        <span class="menu-spacer"></span>
+       
         <div>
           <a mat-button [routerLink]="'/'"> Home </a>
           <a mat-button [routerLink]="'/skills'"> Profile </a>
@@ -24,7 +23,7 @@
     </mat-toolbar>
    
 </header>
-<mat-sidenav-container >
+<mat-sidenav-container style="background-color:black;color:antiquewhite">
   <mat-sidenav #sidenav style="background-color:black;color:antiquewhite">
     <mat-nav-list>
       <a mat-button [routerLink]="'/'"> <img src="Images/1234.png" /> </a><br />
@@ -36,7 +35,9 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <div style="height: 88vh;" class="container" >
+    <div style="    height: 280vh;
+    background-color: black;
+    color: antiquewhite" class="container" >
 
       <router-outlet></router-outlet>
     </div>
