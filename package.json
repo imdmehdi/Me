@@ -1,11 +1,11 @@
 {
-  "name": "staticapp",
+  "name": "Me",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:ssr": "ng run StaticApp:server:dev",
+    "build:ssr": "ng run Me:server:dev",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
